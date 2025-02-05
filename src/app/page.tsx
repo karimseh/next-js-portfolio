@@ -1,12 +1,14 @@
-import AboutMe from "@/components/AboutMe";
-import Work from "@/components/Work";
+import AboutMe from '@/components/AboutMe';
+import Projects from '@/components/Projects';
+import Work from '@/components/Work';
 
 export default function Home() {
   return (
-   <div>
+    <div className="container mx-auto grid grid-cols-1 gap-4 md:grid-cols-2">
       <AboutMe />
-      
+
       <Work />
-   </div>
+      <Projects />
+    </div>
   );
 }

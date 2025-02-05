@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
-import {Oswald} from "next/font/google";
-import "./globals.css";
-import Header from "@/components/Header";
+import type { Metadata } from 'next';
+import { Oswald } from 'next/font/google';
+import './globals.css';
+import Header from '@/components/Header';
 
 const oswald = Oswald({
   subsets: ['latin'],
@@ -10,10 +10,9 @@ const oswald = Oswald({
   display: 'swap', // Prevent layout shift
 });
 
-
 export const metadata: Metadata = {
   title: "Karim's Portfolio",
-  description: "A frontend developer",
+  description: 'A frontend developer',
 };
 
 export default function RootLayout({
@@ -23,10 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${oswald.variable}`}>
-      <body
-        className={`antialiased`}
-      >
-        <Header />  
+      <body className={`antialiased`}>
+        <Header />
         {children}
       </body>
     </html>
