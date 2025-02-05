@@ -1,8 +1,9 @@
+'use client';
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
-import { Avatar, AvatarImage } from './ui/avatar';
 import { Tooltip, TooltipContent, TooltipProvider } from './ui/tooltip';
 import { TooltipTrigger } from '@radix-ui/react-tooltip';
+import AvatarSkeleton from './AvatarSkeleton';
 
 export default function AboutMe() {
   return (
@@ -27,9 +28,7 @@ export default function AboutMe() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
-                <Avatar>
-                  <AvatarImage src="./next.png" alt="Next" />
-                </Avatar>
+                <AvatarSkeleton src="./next.png" alt="Next" />
               </TooltipTrigger>
               <TooltipContent>
                 <p>Next.Js</p>
@@ -39,9 +38,7 @@ export default function AboutMe() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
-                <Avatar>
-                  <AvatarImage src="./react.png" alt="Next" />
-                </Avatar>
+                <AvatarSkeleton src="./react.png" alt="React" />
               </TooltipTrigger>
               <TooltipContent>
                 <p>React.Js</p>
@@ -51,9 +48,7 @@ export default function AboutMe() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
-                <Avatar>
-                  <AvatarImage src="./js.png" alt="Next" />
-                </Avatar>
+                <AvatarSkeleton src="./js.png" alt="Javascript" />
               </TooltipTrigger>
               <TooltipContent>
                 <p>Javascript</p>
@@ -63,9 +58,17 @@ export default function AboutMe() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
-                <Avatar>
-                  <AvatarImage src="./git.png" alt="Next" />
-                </Avatar>
+                <AvatarSkeleton src="./typescript.png" alt="Typescript" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>TypeScript</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                <AvatarSkeleton src="./git.png" alt="Git" />
               </TooltipTrigger>
               <TooltipContent>
                 <p>Git</p>
@@ -75,9 +78,7 @@ export default function AboutMe() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
-                <Avatar>
-                  <AvatarImage src="./vite.png" alt="Next" />
-                </Avatar>
+                <AvatarSkeleton src="./vite.png" alt="Vite" />
               </TooltipTrigger>
               <TooltipContent>
                 <p>Vite.Js</p>
