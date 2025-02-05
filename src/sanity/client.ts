@@ -10,7 +10,7 @@ export const client = createClient({
 });
 
 const builder = imageUrlBuilder(client);
-export const urlFor = (source) => builder.image(source);
+export const urlFor = (source :string) => builder.image(source);
 
 // GROQ Query helper
 export async function getProjects(): Promise<Project[]> {
