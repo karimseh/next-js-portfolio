@@ -1,8 +1,12 @@
+import AboutMe from "@/components/AboutMe";
+import Work from "@/components/Work";
 
 export default function Home() {
   return (
    <div>
-      <h1>Hello World !</h1>
+      <AboutMe />
+      
+      <Work />
    </div>
   );
 }
